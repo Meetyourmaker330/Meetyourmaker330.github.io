@@ -1,0 +1,39 @@
+// main: ../style.less
+
+
+
+.header-menu {
+   padding-top: 40px;
+   margin-bottom: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @media @tablet {
+     display: flex;
+     justify-content: space-around;
+   }
+
+}
+
+@media @mobile {
+  .header {
+   width: 100%;
+  }
+}
+
+.header.fixed {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background-color: @green;
+
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+.header.fixed .header-menu {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}

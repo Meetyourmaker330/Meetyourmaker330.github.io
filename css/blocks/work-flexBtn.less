@@ -1,0 +1,48 @@
+// main: ../style.less
+
+
+
+.works-flexBtn {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 120px;
+
+   @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+   }
+
+
+   & :hover {
+      background-color: @green;
+         
+   }
+
+
+   .work-btn {
+      width: 180px;
+      height: 50px;
+      border: 2px solid @green;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 10px;
+      margin-right: 20px;
+      color: @black;
+      font-size: 20px;
+      font-weight: bold;
+      transition: all 0.5s;
+
+
+      @media @mobile {
+         margin-bottom: 10px;
+         width: 250px;
+         margin-right: 0px;
+      }
+   }
+
+
+}
+

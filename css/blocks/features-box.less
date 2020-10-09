@@ -1,0 +1,84 @@
+// main: ../style.less
+
+.features-box {
+   display: flex;
+   justify-content: space-between;
+
+   @media @mobile {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: space-around;
+      align-items: center;
+   }
+
+
+   .features-mini {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 320px;
+      height: 250px;
+      
+
+      @media @mobile {
+       display: flex;
+       flex-direction: column;
+       width: 250px;
+       height: 150px;
+      }
+   }
+
+
+   .icon-features {
+      margin-left: 125px;
+      width: 62px;
+      height: 62px;
+
+      @media @mobile {
+         width: 30px;
+         height: 30px;
+         margin: auto;
+      }
+   }
+
+
+   .title-mini {
+      text-transform: capitalize;
+      font-size: 20px;
+      font-weight: bold;
+      color: @black;
+      text-align: center;
+      
+      @media @mobile {
+         font-size: 15px;
+      }
+   
+   }
+
+
+
+   .subtitle-mini {
+      font-size: 15px;
+      font-weight: bold;
+      color: @black;
+      text-align: center;
+
+      @media @mobile {
+         font-size: 10px;
+      }
+    }
+
+   
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+// main: ../style.less
+
+.general-block {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 120px;
+
+   @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+      max-width: 320px;
+      height: auto;
+      margin-bottom: 80px;
+   }
+}
+
+.blog-box {
+   width: 570px;
+   height: 400px;
+   padding-top: 65px;
+
+   @media @mobile {
+      max-width: 320px;
+      height: 250px;
+      margin-bottom: 40px;
+      padding-left: 20px;
+   }
+
+}
+
+.blog-box:nth-child(1){
+   background-image: url(..//images/seo.png);
+  
+}
+
+.blog-box:nth-child(3){
+   @media @mobile {
+      display: none;
+   }
+}
+
+.blog-box:nth-child(4){
+   background-image: url(..//images/apple-desk-working-technology.png);
+
+   @media @mobile {
+      display: none;
+   }
+}
+
+.blog-box:nth-child(5){
+   background-image: url(..//images/imac-apple-mockup-app-38544.png);
+}
+
+
+.seo {
+   text-transform: capitalize;
+   font-size: 25px;
+   font-weight: bold;
+   margin-bottom: 20px;
+
+   @media @mobile {
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 10px;
+   }
+}
+
+.seo:hover {
+   color: @green;
+   cursor: pointer;
+}
+
+
+.span-date {
+   display: inline-block;
+   background-image: url(..//images/mini-icon.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   padding-left: 30px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+}
+.span-development {
+   background-image: url(..//images/mini-icon2.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   padding-left: 30px;
+}
+
+.about-seo {
+   font-size: 20px;
+
+   @media @mobile {
+      font-size: 15px;
+   }
+}
+
+

@@ -1,0 +1,167 @@
+// main: ../style.less
+
+.member-block {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 125px;
+
+   @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      height: auto;
+      margin-bottom: 20px;
+   }
+}
+
+.member-box {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   height: 490px;
+
+   @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 300px;
+      margin-bottom: 40px;      
+   }
+
+}
+   
+
+.member-photo {
+   width: 360px;
+   height: 320px;
+   border-radius: 10px;
+  
+   @media @mobile {
+      width: 300px;
+      margin-bottom: -40px;
+   }
+}
+
+.img-member {
+   @media @mobile{
+      width: 300px;
+      height: auto;
+   }
+}
+
+.member-name {
+   font-size: 20px;
+   text-transform: capitalize;
+   color: @black;
+
+   @media @mobile {
+      font-size: 15px;
+      font-weight: bold;
+   }
+}
+
+.member-about {
+   font-size: 20px;
+   text-transform: capitalize;
+   color: @black;
+
+   @media @mobile {
+      font-size: 15px;
+      font-weight: bold;
+   }
+}
+
+.member-social {
+   display: flex;
+
+   @media @mobile {
+      margin-left: 20px;
+   }
+}
+
+.to-write {
+   width: 50px;
+   height: 50px;
+   border-radius: 6px;
+   background-color: #f0f1f1;
+   text-align: center;
+   padding-top: 10px;
+   margin-right: 23px;
+
+   @media @mobile {
+      margin-right: 20px;
+      width: 40px;
+      height: 40px;
+   }
+}
+
+
+#face-book {
+  background-image: url(..//images/fb.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#face-book:hover {
+   background-image: url(..//images/fb-white.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: @blue;
+   cursor: pointer;
+}
+
+
+#twitter {
+   background-image: url(..//images/tw\ —\ green.png);
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+ 
+ #twitter:hover {
+    background-image: url(..//images/tw-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: @blue;
+    cursor: pointer;
+ }
+
+ #messenger {
+   background-image: url(..//images/ms-green.png);
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+ 
+ #messenger:hover {
+    background-image: url(..//images/ms-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: @blue;
+    cursor: pointer;
+ }
+
+ #dribble {
+   background-image: url(..//images/db-green.png);
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+ 
+ #dribble:hover {
+    background-image: url(..//images/db-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: @blue;
+    cursor: pointer;
+ }
+
+.button {
+   display: none;
+   width: 200px;
+   height: 100px;
+   background-color: @blue;
+   margin: auto;
+}
+
